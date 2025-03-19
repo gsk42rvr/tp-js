@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="copy-to-clipboard.js"></script>
+</head>
+<body>
+<label for="copy-text">Copy Text:</label>
+<textarea id="copy-text">
+    Copy this text to clipboard
+</textarea>
+
+<button onclick="copyToClipboard('copy-text')">Copy</button>
+
+
+<label for="PASTE">Paste Text:</label>
+<textarea id="PASTE" rows="4" cols="50" >
+    Paste here
+</textarea>
+
+
+<label for="try">
+    Try Text:
+</label>
+<textarea id="try" rows="4" cols="50" >
+    Try here
+</textarea>
+<button onclick="copyToClipboard('try')">Copy</button>
+
+</body>
+<style>
+    #copy-text {
+        width: 100%;
+        height: 100px;
+    }
+</style>
+</html>
